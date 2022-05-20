@@ -10,7 +10,7 @@ LSTM (Long short-term memory，长短期记忆) 是一种特殊的RNN，主要�
 
 RNN (Recurrent Neural Network，循环卷积网络) 是一种用于处理序列数据的神经网络，比如文本分析中，某个单词的意思会因为上文提到的内容不同而有不同的含义，RNN就能够很好地解决这种问题。
 
-![img](https://gitee.com/xn1997/picgo/raw/master/4YjqgUAhcBvtenX.jpg) 
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/4YjqgUAhcBvtenX.jpg) 
 
 我们以上图的第一个基本单元进行分析。
 
@@ -33,7 +33,7 @@ $$
 
 LSTM 结构和普通 RNN 的主要输入输出区别如下图所示：
 
-![img](https://gitee.com/xn1997/picgo/raw/master/zfJE7smedUuZ2tH.jpg)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/zfJE7smedUuZ2tH.jpg)
 
 即 LSTM 结构相比于普通的 RNN 多了一个传输状态 $c^t$ (cell state)， $h^t$ 为 hidden state。参考资料中说RNN中的 $h^t$ 对应于 LSTM 中的 $c^t$，传递过程中改变较慢。
 
@@ -45,7 +45,7 @@ LSTM 结构和普通 RNN 的主要输入输出区别如下图所示：
 
 首先使用LSTM的当前输入 $x^t$ 和上一个状态传递下来的 $h^{t-1}$ 拼接得到四个状态。
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/ej4NmhTq6AVvSUX.jpg" alt="img" style="zoom:40%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/ej4NmhTq6AVvSUX.jpg" alt="img" style="zoom:40%;" />
 
 <img src="https://i.loli.net/2020/06/04/68ncYH4hkv3WrzE.jpg" alt="preview" style="zoom:40%;" />
 
@@ -55,7 +55,7 @@ LSTM 结构和普通 RNN 的主要输入输出区别如下图所示：
 
 <img src="https://pic1.zhimg.com/80/v2-2b5e5e1f76374c764d24ae5d70e94288_720w.jpg" alt="img" style="zoom: 80%;" />
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/GuMSCeBvKXLbWHf.jpg" alt="img" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/GuMSCeBvKXLbWHf.jpg" alt="img" style="zoom:80%;" />
 
 其中 $\bigodot$ 运算符表示矩阵中对应的元素相乘，而 $\bigoplus$ 表示进行矩阵加法。因此要求两个矩阵是同型的。
 

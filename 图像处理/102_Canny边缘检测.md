@@ -15,7 +15,7 @@ https://www.cnblogs.com/techyan1990/p/7291771.html【边缘检测之Canny】
 
    在两个相邻像素之间使用线性插值来得到要比较的两个像素梯度强度（上述的两个梯度强度）
 
-   <img src="https://gitee.com/xn1997/picgo/raw/master/image-20220318215358260.png" alt="img" style="zoom:67%;" />
+   <img src="https://raw.githubusercontent.com/xn1997/picgo/master/image-20220318215358260.png" alt="img" style="zoom:67%;" />
 
    梯度计算方法：$P1=E+(NE-E)*tanB=(1-tanB)E+tanB*NE$
 

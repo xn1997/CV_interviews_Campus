@@ -42,7 +42,7 @@ int main()
 
 输出如下：
 
-![](https://gitee.com/xn1997/picgo/raw/master/3UV4ldbkv62NrEM.jpg)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/3UV4ldbkv62NrEM.jpg)
 
 ### 为什么以成倍的方式扩容而不是一次增加一个固定大小的容量
 

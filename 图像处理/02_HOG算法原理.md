@@ -56,7 +56,7 @@ $$
 
 然后分别统计每个cell的方向梯度直方图，大量的实验表明，统计直方图时采用9个bin来统计方向信息效果较好。具体来说就是，将cell的梯度方向 `0~180°`（或 `0~360°`，即考虑了正负）分成9个方向块，如下图所示：
 
-![](https://gitee.com/xn1997/picgo/raw/master/Lasjh6PgRdKSAN9.png)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/Lasjh6PgRdKSAN9.png)
 
 在直方图中，<font color='red'>每 `20°` 组成一个bin，当梯度方向落在某个bin范围中，该bin上的计数就增加</font>（可以理解为按照梯度方向来进行投影的过程）。那相应的bin计数应该增加多少呢？Dalal和Triggs等人认为，将<font color='red'>梯度幅值大小作为投影权值效果通常较好</font>。也就是说，假设某个像素点的梯度大小为3，其梯度方向刚好落在 `20~40°`之间，那么该bin上的计数就增加3（也就是将梯度大小作为权值用来计数）。通过这样的一 一映射，对于每个cell，都可以映射成9个bin的方向梯度直方图，即每个cell都是9维的descriptor。
 
@@ -68,7 +68,7 @@ $$
 
 作者的做法是：<font color='red'>将多个cell组成更大的block，然后对每个block进行对比度归一化</font>。图像最终的HOG特征描述子就是所有block内的cell的直方图构成的向量。事实上，**块之间是有重叠的**，也就是说，每个细胞单元的直方图都会被多次用于最终的描述子的计算。块之间的重叠看起来有冗余，但可以显著的提升性能 。
 
-![](https://gitee.com/xn1997/picgo/raw/master/XCeHTDhs65YmiUb.png)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/XCeHTDhs65YmiUb.png)
 
 如上图所示，每个block由2×2个cell组成，每个cell包含8×8个像素，每个cell得到9个方向的bin，因此**每个block的特征向量维度为2×2×9=36维**。
 

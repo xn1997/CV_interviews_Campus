@@ -25,13 +25,13 @@
 
 #### 实验一：统计 RPN 输出的 proposals 在各个 IOU 范围内的数量。
 
-![img](https://gitee.com/xn1997/picgo/raw/master/v6SjEZsV7mhWwfd.jpg)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/v6SjEZsV7mhWwfd.jpg)
 
 可以看出，IOU 在 0.6，0.7 以上的proposals 数量很少，直接提高阈值的话，确实有可能出现上述两个问题。
 
 #### 实验二：将IOU 阈值设为 0.5，0.6，0.7时，proposals的分布以及检测精度
 
-![img](https://gitee.com/xn1997/picgo/raw/master/fb49hSgoLnIVZdU.jpg)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/fb49hSgoLnIVZdU.jpg)
 
 (c) 图中横轴表示RPN的输出 proposal 的IoU，纵轴表示proposal经过 box reg 的新的IoU。这个图可以这么理解：当横坐标为 0.55 也就是RPN的输出 proposal 的IoU在 0.5 左右时，将 IOU 的阈值设为 0.5 的表现比其他两个更高阈值的更好。横坐标为 0.65或者 0.75时的情况同样。
 
@@ -46,7 +46,7 @@
 
 做了上面两个实验之后，那么改进的思路便很明显了。既然单一一个阈值训练出的检测器效果有限，作者就提出了muti-stage的结构，每个stage都有一个不同的IoU阈值，而且阈值是逐步提高。
 
-![preview](https://gitee.com/xn1997/picgo/raw/master/jaHcAIuvi3dfoMy.jpg)
+![preview](https://raw.githubusercontent.com/xn1997/picgo/master/jaHcAIuvi3dfoMy.jpg)
 
 (b) 中的 detector 的是共享的，而且三个分支的IOU阈值都取 0.5 。而经过上面的分析，我们已经知道单一阈值0.5，是无法对所有proposal取得良好效果的。此外，detector会改变样本的分布，这时候再使用同一个共享的H对检测肯定是有影响的。
 

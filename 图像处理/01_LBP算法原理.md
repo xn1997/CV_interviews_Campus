@@ -27,7 +27,7 @@ LBP是一种局部特征描述算子，最原始的LBP算子使用大小为3×3�
 
 如下图所示，可以更直观地理解LBP特征描述的思想（以窗口中心左上角的像素作为LBP值起始位）：
 
-![img](https://gitee.com/xn1997/picgo/raw/master/HAfcpDgYmkdnsK1.png)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/HAfcpDgYmkdnsK1.png)
 
 > LBP的原理的确很简单吧？简单归简单，这显然还不能完全满足我们实际应用的需求，比如窗口大小的调整、旋转不变性等等，于是就有了以下一些改进的版本。
 
@@ -40,7 +40,7 @@ LBP是一种局部特征描述算子，最原始的LBP算子使用大小为3×3�
 
 改进后的LBP算子允许在半径为 R 的圆形邻域内有任意多个像素点，从而得到了诸如半径为R的圆形区域内含有P个采样点的LBP算子。下图给出三种不同半径大小的圆形LBP特征描述算子：
 
-![img](https://gitee.com/xn1997/picgo/raw/master/OkCFW9vpgAStKT1.png) 
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/OkCFW9vpgAStKT1.png) 
 
 ## 旋转不变LBP算子
 
@@ -48,7 +48,7 @@ LBP是一种局部特征描述算子，最原始的LBP算子使用大小为3×3�
 
 如下图所示，对于以下8种不同旋转角度的LBP值特征，它们的LBP值均为15（即最小值，其二进制表示为00001111），因此图像的LBP特征就具有了旋转不变性。
 
-![img](https://gitee.com/xn1997/picgo/raw/master/20140221184735734)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/20140221184735734)
 
 ## LBP等价模式
 
@@ -56,7 +56,7 @@ LBP是一种局部特征描述算子，最原始的LBP算子使用大小为3×3�
 
 为了解决上述二进制模式过多的问题，提高统计性，Ojala等人提出了采用一种**“等价模式”（Uniform Pattern）**来对LBP算子的模式种类进行降维。**其主要思想是**：对于某些代表了图像的边缘、斑点、角点等信息的LBP模式，其具有较好的特征区分度，我们不做降维，这些LBP模式归为**等价模式类**；而对于其他没什么代表性的LBP模式，我们不太关心，统一归为一种类型，叫做**剩余模式（混合模式）** 。
 
-![img](https://gitee.com/xn1997/picgo/raw/master/20150805105836031)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/20150805105836031)
 
 那么什么样的LBP模式具有较好的区分度，能够称为**等价模式**呢？Ojala等人认为，在实际图像中，绝大多数LBP模式**最多只包含两次从1到0或从0到1的跳变**。于是将等价模式定义为：**当某个LBP所对应的循环二进制数从0到1或从1到0最多有两次跳变时，该LBP所对应的二进制就称为一个等价模式类**。
 
@@ -82,7 +82,7 @@ LBP是一种局部特征描述算子，最原始的LBP算子使用大小为3×3�
 
 使用LBP算子提取特征，对于图像上的每个像素点都可以得到一个LBP值，这些LBP值也组成了一幅“图像”，如下图所示，上面为不同光照强度下的图像，下面为提取LBP特征后LBP值表示的图像，可以看出，**LBP特征提取对均匀的光照变化具有很强的鲁棒性**，因此这种算法在很多领域都得到了应用。
 
-![img](https://gitee.com/xn1997/picgo/raw/master/bzk3tnEWw5GjrC9.png)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/bzk3tnEWw5GjrC9.png)
 
 ## LBP特征检测步骤：
 

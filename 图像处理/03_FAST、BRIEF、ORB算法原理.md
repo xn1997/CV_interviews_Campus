@@ -14,7 +14,7 @@ FAST（features from accelerated segment test）是一种角点检测算法，�
 
 FAST角点检测算法主要考虑像素点邻域的圆形窗口上的16个像素。如下图所示，作者认为，**以像素 `p` 为中心的周围圆环上的16个像素中，如果有连续 `n` 个像素点的灰度值都比 `p` 点的灰度值大或都小，则认为 `p` 是一个角点**。
 
-![](https://gitee.com/xn1997/picgo/raw/master/K1mbWacvpxt5JVG.jpg)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/K1mbWacvpxt5JVG.jpg)
 
 实际上，在比较像素灰度值时，需要加上一个阈值 `t`。
 $$

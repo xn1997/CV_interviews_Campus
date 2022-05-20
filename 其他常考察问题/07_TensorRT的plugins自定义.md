@@ -44,7 +44,7 @@ config-->engine-->context
 3. 将engine序列化到文件中，也就是生成plan file
 4. 读取序列化的plan file，反序列化，并做inference
 
-![图片1](https://gitee.com/xn1997/picgo/raw/master/%E5%9B%BE%E7%89%871.png)
+![图片1](https://raw.githubusercontent.com/xn1997/picgo/master/%E5%9B%BE%E7%89%871.png)
 
 ### build阶段
 
@@ -120,7 +120,7 @@ TRT显存管理：在生成context时，会根据max batch先开辟足够的显�
    2. 使用creator根据参数生成plugin
    3. 使用将该plugin添加到network中，这样就可以反序列化成功，且进行inference
 
-![图片2](https://gitee.com/xn1997/picgo/raw/master/%E5%9B%BE%E7%89%872.png)
+![图片2](https://raw.githubusercontent.com/xn1997/picgo/master/%E5%9B%BE%E7%89%872.png)
 
 ### API编写
 

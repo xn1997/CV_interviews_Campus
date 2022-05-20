@@ -6,7 +6,7 @@ Qt中的signals和slots的内部原理是什么？
 
 ## 解答
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/Qt%E4%BF%A1%E5%8F%B7%E5%92%8C%E6%A7%BD.svg" alt="Qt信号和槽" style="zoom:150%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/Qt%E4%BF%A1%E5%8F%B7%E5%92%8C%E6%A7%BD.svg" alt="Qt信号和槽" style="zoom:150%;" />
 
 ### MOC预编译
 
@@ -72,7 +72,7 @@ void Tom::miao()
 
 以下为示意图：
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/image-20210708225958492.png" alt="image-20210708225958492" style="zoom:70%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/image-20210708225958492.png" alt="image-20210708225958492" style="zoom:70%;" />
 
 在具体程序中，以上这个数组+链接并结构为`QObjectConnectionListVector`，而单独一个链表为`CommectionList`，即
 

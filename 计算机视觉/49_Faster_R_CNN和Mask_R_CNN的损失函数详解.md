@@ -62,7 +62,7 @@ $$
 
 RPN网络的产生的anchor只分为前景和背景，前景的标签为1，背景的标签为0。在训练RPN的过程中，会选择256个anchor，256就是公式中的$N_{cls}$。这里的损失是经典的二分类交叉熵损失。
 
-![](https://gitee.com/xn1997/picgo/raw/master/FQKfa5hwI3Y4zDg.png)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/FQKfa5hwI3Y4zDg.png)
 
 假设我们RPN网络的特征图大小为38×50，那么就会产生38×50×9=17100个anchor，然后在RPN的训练阶段会从17100个anchor中挑选Ncls个anchor用来训练RPN的参数，其中挑选为前景的标签为1，背景的标签为0。
 
@@ -78,7 +78,7 @@ RPN的分类损失时二分类的交叉熵损失，而Fast RCNN是**多分类的
 
 $t_i^*$ 是与 $t_i$ 维度相同的向量，表示anchor，RPN训练阶段（rois，FastRCNN阶段）相对于gt**实际的偏移量**
 
-![img](https://gitee.com/xn1997/picgo/raw/master/ULwRnE6qFXCgZ2j.png)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/ULwRnE6qFXCgZ2j.png)
 
 R是 smoothL1 函数，不同之处是这里**σ = 3，RPN训练（σ = 1，Fast RCNN训练）**
 

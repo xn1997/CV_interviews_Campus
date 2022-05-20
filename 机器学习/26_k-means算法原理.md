@@ -38,7 +38,7 @@ k-means算法采用了**贪心策略**，通过多次迭代来近似求解上面
 
 k-means算法迭代示意图如下：
 
-![](https://gitee.com/xn1997/picgo/raw/master/cUOCwPasfu57qgh.png)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/cUOCwPasfu57qgh.png)
 
 
 
@@ -100,7 +100,7 @@ k-means算法迭代示意图如下：
 
 k值的选择一般基于经验或者多次实验来确定，手肘法便是如此，其主要思想是：通过多次实验分别选取不同的k值，将不同k值的聚类结果对应的最小代价画成折线图，将曲线趋于平稳前的拐点作为最佳k值。如下图所示：
 
-![](https://gitee.com/xn1997/picgo/raw/master/DWTN23pnCzXqlwL.png)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/DWTN23pnCzXqlwL.png)
 
 > 上图中，k取值在1~3时，曲线急速下降；当k>3时，曲线趋于平稳。因此，在k=3处被视为拐点，所以手肘法认为最佳的k值就是3。
 >

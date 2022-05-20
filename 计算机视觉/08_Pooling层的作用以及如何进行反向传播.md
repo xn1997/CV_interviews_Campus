@@ -14,7 +14,7 @@ CNN一般采用average pooling或max pooling来进行池化操作，而池化操
 
 average pooling在前向传播中，就是把一个patch中的值取平均传递给下一层的一个像素。因此，**在反向传播中，就是把某个像素的值平均分成 n 份分配给上一层**。（！！注意这里是分成 n 份，而不是将该元素的值复制 n 份，不然会使得loss之和变为原来的 n 倍，造成梯度爆炸。）
 
-![](https://gitee.com/xn1997/picgo/raw/master/vMwAtSe7fy5dXj4.jpg)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/vMwAtSe7fy5dXj4.jpg)
 
 ### max pooling
 
@@ -22,7 +22,7 @@ max pooling在前向传播中，把一个patch中最大的值传递给下一层�
 
 所以，max pooling和average pooling不同的是，**max pooling在前向传播的时候要记录池化操作时哪个像素的值是最大的**，即max_id，在反向传播中才能将其对应起来。
 
-![](https://gitee.com/xn1997/picgo/raw/master/TArNvOntfCB9Goj.jpg)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/TArNvOntfCB9Goj.jpg)
 
 
 
@@ -48,19 +48,19 @@ max pooling在前向传播中，把一个patch中最大的值传递给下一层�
 
 此外，图像主要的特征捕获到了，同时又将问题的规模从16×16降到了8×8（降维）。
 
-![](https://gitee.com/xn1997/picgo/raw/master/hNB69TeSsXroWq3.jpg)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/hNB69TeSsXroWq3.jpg)
 
 #### ②rotation invariance（旋转不变性）：
 
 下图表示汉字“一”的识别，第一张相对于x轴有倾斜角，第二张是平行于x轴，两张图片相当于做了旋转，经过多次max pooling后具有相同的特征。
 
-![](https://gitee.com/xn1997/picgo/raw/master/XtrVphe8WIC9x6n.jpg)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/XtrVphe8WIC9x6n.jpg)
 
 **③scale invariance（尺度不变性）：**
 
 下图表示数字“0”的识别，第一张的“0”比较大，第二张的“0”进行了较小，相当于作了缩放，同样地，经过多次max pooling后具有相同的特征。
 
-![](https://gitee.com/xn1997/picgo/raw/master/uGUTXKp6QmNlsZ2.jpg)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/uGUTXKp6QmNlsZ2.jpg)
 
 
 
@@ -101,7 +101,7 @@ $$
 
 
 
-![](https://gitee.com/xn1997/picgo/raw/master/B81LE2Ijgsn5cF7.png)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/B81LE2Ijgsn5cF7.png)
 
 
 

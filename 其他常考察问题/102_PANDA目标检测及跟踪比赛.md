@@ -20,7 +20,7 @@ DeepSORT框架具体位置[`DeepSORT-self/deep_sort.py`](https://gitee.com/xn199
 
 推理时间：单张图片推理时间不超过90s
 
-![image-20210716105836906](https://gitee.com/xn1997/picgo/raw/master/image-20210716105836906.png)
+![image-20210716105836906](https://raw.githubusercontent.com/xn1997/picgo/master/image-20210716105836906.png)
 
 ## 数据分析
 
@@ -106,7 +106,7 @@ DeepSORT框架具体位置[`DeepSORT-self/deep_sort.py`](https://gitee.com/xn199
 
 **mAP和AR500的调和均值**：即考虑查准率也考虑查全率
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/image-20210714103414256.png" alt="image-20210714103414256" style="zoom:100%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/image-20210714103414256.png" alt="image-20210714103414256" style="zoom:100%;" />
 
 <font color='red'><big>复赛</big></font>
 

@@ -10,9 +10,9 @@
 
 > 下面分别通过《机器学习》和《百面机器学习》两本书中的图片先来直观地理解一下LDA的思想。
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/qOzCRLJ7d5Erx2F.png" alt="LDA2.png" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/qOzCRLJ7d5Erx2F.png" alt="LDA2.png" style="zoom: 80%;" />
 
-![](https://gitee.com/xn1997/picgo/raw/master/uETl7im9gFfwxnY.png)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/uETl7im9gFfwxnY.png)
 
 ● 为什么要将最大化类间距离和最小化类内距离同时作为优化目标呢？
 

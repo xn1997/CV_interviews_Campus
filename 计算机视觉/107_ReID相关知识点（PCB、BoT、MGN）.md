@@ -6,11 +6,11 @@
 
 标准PCB结构图：
 
-![PCB结构图](https://gitee.com/xn1997/picgo/raw/master/PCB%E7%BB%93%E6%9E%84%E5%9B%BE.png)
+![PCB结构图](https://raw.githubusercontent.com/xn1997/picgo/master/PCB%E7%BB%93%E6%9E%84%E5%9B%BE.png)
 
 RPP结构图：
 
-![RPP结构图](https://gitee.com/xn1997/picgo/raw/master/PCB_RPP.jpg)
+![RPP结构图](https://raw.githubusercontent.com/xn1997/picgo/master/PCB_RPP.jpg)
 
 ## 网络流程：
 
@@ -47,7 +47,7 @@ RPP结构图：
 
 上述问题的实验证明如下图所示：**（这里只是验证硬切片的问题，继而引出RPP，对于训练是没有意义的）**
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/PCB_part.jpg" alt="使用RPP的原因" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/PCB_part.jpg" alt="使用RPP的原因" style="zoom:50%;" />
 
 1. 定以一个相似度度量标准。
 
@@ -194,7 +194,7 @@ $$
 
 在训练时，加入softmax层，用于回归ID的类别损失，如下图所示：
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/triplet+softmax_loss.jpg" alt="triplet+softmax loss" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/triplet+softmax_loss.jpg" alt="triplet+softmax loss" style="zoom:80%;" />
 
 原理：
 
@@ -219,7 +219,7 @@ $$
 
 模型结构如下图所示：
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/MGN.png" alt="MGN结构图" style="zoom:%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/MGN.png" alt="MGN结构图" style="zoom:%;" />
 
 1. backbone提取特征图。
 
@@ -268,7 +268,7 @@ $$
 
 模型结构图如下：
 
-![ReID strong baseline结构图](https://gitee.com/xn1997/picgo/raw/master/ReID_strong_baseline.jpg)
+![ReID strong baseline结构图](https://raw.githubusercontent.com/xn1997/picgo/master/ReID_strong_baseline.jpg)
 
 1. backbone提取特征。
 
@@ -321,7 +321,7 @@ $$
 
 使用$f_t$或$f_i$都可以用于相似度度量。下面是使用不同度量方法（欧氏距离和余弦距离）和不同特征的对比表：
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/ReID_strong_baseline_inferance.jpg" alt="选用不同$f_t$的效果图" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/ReID_strong_baseline_inferance.jpg" alt="选用不同$f_t$的效果图" style="zoom:80%;" />
 
 原作者建议<font color=red>**使用$f_i$+余弦距离**</font>的方案。
 

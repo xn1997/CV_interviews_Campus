@@ -23,7 +23,7 @@ LeNet 被视为CNN的开山之作，是LeCun大神在1998年提出的，**定义
 
 有意思的是，在当时由于算力不足，作者将网络分上下两部分分别卷积，放在两块GPU上进行训练。这一操作倒是给了后来人的诸多启发，典型的如 shuffle-net，借用该想法进行轻量级改进。
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/9VbjCshgR1Ypxk2.png" alt="https://upload-images.jianshu.io/upload_images/7229096-47de76410f44a0af.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/9VbjCshgR1Ypxk2.png" alt="https://upload-images.jianshu.io/upload_images/7229096-47de76410f44a0af.png" style="zoom:80%;" />
 
 ### AlexNet 关键点与贡献：
 
@@ -38,7 +38,7 @@ LeNet 被视为CNN的开山之作，是LeCun大神在1998年提出的，**定义
 
 VGG 主要在网络深度上进行探索，提出了两个深度的网络 **VGG16（13 层卷积 + 3 层全连接）**和 VGG19（16 层卷积 + 3 层全连接），由于VGG-16网络结构十分简单，并且很适合迁移学习，因此至今VGG-16仍在广泛使用。
 
-![preview](https://gitee.com/xn1997/picgo/raw/master/BIaJfzVQTbdguXh.jpg)
+![preview](https://raw.githubusercontent.com/xn1997/picgo/master/BIaJfzVQTbdguXh.jpg)
 
 ### VGG 关键点与贡献：
 
@@ -52,7 +52,7 @@ VGG 主要在网络深度上进行探索，提出了两个深度的网络 **VGG1
 
 GoogLeNet 是 ImageNet 2014的冠军网络。GoogLeNet 不仅在深度上进行探索，还增加了网络的宽度，试图回答在设计网络时究竟应该选多大尺寸的卷积、或者应该选汇合层。其提出了Inception模块，同时用1×1、3×3、5×5卷积和3×3汇合，并保留所有结果。
 
-![preview](https://gitee.com/xn1997/picgo/raw/master/Xe5pz8TAjJdVW9k.jpg)
+![preview](https://raw.githubusercontent.com/xn1997/picgo/master/Xe5pz8TAjJdVW9k.jpg)
 
 ### GoogLeNet 关键点与贡献：
 
@@ -72,7 +72,7 @@ inception结构在之后的几年中从v1到v4不断改进。
 
 ResNet 是 ImageNet 2015年的冠军网络，是一个里程碑的事件。ResNet旨在解决网络加深后训练难度增大的现象。其提出了residual模块，包含两个3×3卷积和一个短路连接(左图)。==短路连接可以有效缓解反向传播时由于深度过深导致的梯度消失现象，这使得网络加深之后性能不会变差==。因此 ResNet 网络的层数有 152 之多。
 
-![preview](https://gitee.com/xn1997/picgo/raw/master/IRrt4mA1uUHpb7E.jpg)
+![preview](https://raw.githubusercontent.com/xn1997/picgo/master/IRrt4mA1uUHpb7E.jpg)
 
 ### ResNet 关键点与贡献：
 
@@ -87,7 +87,7 @@ ResNet 是 ImageNet 2015年的冠军网络，是一个里程碑的事件。ResNe
 
 **解决方法：**ResNet就引入短路连接（shortcut connect）机制，直接将恒等映射做为网络的一部分，将问题转换为学习一个残差函数。拟合残差要比拟合恒等映射要容易的多。
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/image-20210704103300917.png" alt="image-20210704103300917" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/image-20210704103300917.png" alt="image-20210704103300917" style="zoom:50%;" />
 
 假设Residual Block的输入为 ![[公式]](https://www.zhihu.com/equation?tex=x) ，则输出 ![[公式]](https://www.zhihu.com/equation?tex=y+) 等于：
 
@@ -131,7 +131,7 @@ H-->conv-->bn-->relu1(relu)-->conv2(conv)-->bn2(bn)-->add
 
 ResNeXt 是 ImageNet 2016年的亚军网络，是 ResNet 的一个改进。传统的方法通常是靠加深或加宽网络来提升性能，但计算开销也会随之增加。ResNeXt旨在不改变模型复杂度的情况下提升性能。受精简而高效的Inception模块启发，ResNeXt将ResNet中非短路那一分支变为多个分支。
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/MtHLK2zl41Co63O.png" alt="preview" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/MtHLK2zl41Co63O.png" alt="preview" style="zoom:80%;" />
 
 ### ResNeXt 关键点与贡献：
 
@@ -145,7 +145,7 @@ ResNeXt 是 ImageNet 2016年的亚军网络，是 ResNet 的一个改进。传�
 
 实现方面，作者在大会报告指出，直接将输出级联会占用很大GPU存储。后来，通过共享存储，可以在相同的GPU存储资源下训练更深的DenseNet。但由于有些中间结果需要重复计算，该实现会增加训练时间。 
 
-![preview](https://gitee.com/xn1997/picgo/raw/master/7D6JqyXYgoHQ2TA.png)
+![preview](https://raw.githubusercontent.com/xn1997/picgo/master/7D6JqyXYgoHQ2TA.png)
 
 ## SENet
 
@@ -153,7 +153,7 @@ SENet 是 ImageNet 2017年的冠军网络，也是 ImageNet 竞赛的收官之�
 
 这其实是一种**通道注意力机制**，因为不是每个通道的信息对结果都是同等重要的。
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/IzyaK6h785upLfs.jpg" alt="preview" style="zoom:60%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/IzyaK6h785upLfs.jpg" alt="preview" style="zoom:60%;" />
 
 ## MobileNet 和 ShuffleNet 轻量化网络
 
@@ -177,7 +177,7 @@ Mobilenet v1核心是把卷积拆分为 Depthwise + Pointwise 两部分。
 
 下面作图为普通的卷积，右图为MobileNet 中的卷积。
 
-![preview](https://gitee.com/xn1997/picgo/raw/master/pSbxWTAD9dhG28R.jpg)
+![preview](https://raw.githubusercontent.com/xn1997/picgo/master/pSbxWTAD9dhG28R.jpg)
 
 MobileNet v2 简化来说就是在 v1 基础上引入了 residual 结构，所以就不展开了。
 
@@ -189,7 +189,7 @@ ShuffleNet是Face++提出的一种轻量化网络结构，主要思路是使用G
 
 下图展示了ShuffleNet的结构，其中(a)就是加入Depthwise的ResNet bottleneck结构，而(b)和(c)是加入Group convolution和Channel Shuffle的ShuffleNet的结构。
 
-![preview](https://gitee.com/xn1997/picgo/raw/master/MoIS3rdkn7mc2JV.jpg)
+![preview](https://raw.githubusercontent.com/xn1997/picgo/master/MoIS3rdkn7mc2JV.jpg)
 
 如同上面的 MobileNet ，ShuffleNet 也可以减少参数量和计算量。但为什么要引入Channel Shuffle操作呢？
 
@@ -197,7 +197,7 @@ ShuffleNet是Face++提出的一种轻量化网络结构，主要思路是使用G
 
 下面详细讲解下 channel shuffle 具体是怎么实现的：
 
-![preview](https://gitee.com/xn1997/picgo/raw/master/CBwYdqiphJEKubj.jpg)
+![preview](https://raw.githubusercontent.com/xn1997/picgo/master/CBwYdqiphJEKubj.jpg)
 
 假设输入的 feature map 有 9 个 channels，groups = 3，分成三组：
 

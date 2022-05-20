@@ -162,7 +162,7 @@ $$
 
 GBTD虽然也是一个加性模型，但其是通过不断迭代拟合样本真实值与当前分类器预测的残差来逼近真实值的。可以形象地理解如下：（图来源于博客：[GBDT 算法](https://www.jianshu.com/p/405f233ed04b)）
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/ui1nrgHVlYjX7y4.png" alt="img" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/ui1nrgHVlYjX7y4.png" alt="img" style="zoom: 50%;" />
 
 按照这个思路，第 m 个基分类器的预测结果为：
 $$
@@ -174,7 +174,7 @@ $$
 $$
 下面是GDBT的一个简单例子：判断用户是否会喜欢电脑游戏，特征有年龄，性别和职业。需要注意的是，GBDT无论是用于分类和回归，采用的都是回归树，分类问题最终是将拟合值转换为概率来进行分类的。
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/pVXWkIQZ6BYsgT9.png" alt="在这里插入图片描述" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/pVXWkIQZ6BYsgT9.png" alt="在这里插入图片描述" style="zoom: 67%;" />
 
 在上图中,每个用户的最后的拟合值为两棵树的结果相加。
 

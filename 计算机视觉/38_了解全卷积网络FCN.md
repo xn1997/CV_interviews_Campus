@@ -10,7 +10,7 @@ FCN 是语义分割的开山之作，没理由不了解。最近发现学习最�
 
 ## 网络结构
 
-![](https://gitee.com/xn1997/picgo/raw/master/xrJyNBYLMZF74Sc.png)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/xrJyNBYLMZF74Sc.png)
 
 下采样后到恢复成原始输入大小的输出之间靠的是反卷积，反卷积的概念我们在其他文章也提到了，请移步到 “48_各种卷积方式串讲.md”。
 

@@ -622,7 +622,7 @@ model size：115.2M
 |      | (256,256) | FP32      | 48.94   | 15.45    | 3.168 |
 |      | (512,512) | FP32      | 78.58   | 49.98    | 1.572 |
 
-检测结果示例：<img src="https://gitee.com/xn1997/picgo/raw/master/HigherHRNet512_result.jpg" style="zoom:25%;" />
+检测结果示例：<img src="https://raw.githubusercontent.com/xn1997/picgo/master/HigherHRNet512_result.jpg" style="zoom:25%;" />
 
 OpenPose size: 104.7M（～150ms）
 

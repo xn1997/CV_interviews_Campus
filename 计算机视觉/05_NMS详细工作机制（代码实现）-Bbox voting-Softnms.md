@@ -6,13 +6,13 @@
 
 下图就是在目标检测中 NMS 的使用效果：emmm大概就是能让你更无遮挡地看到美女的脸吧hhhh
 
-![《手撕非极大值抑制算法NMS与soft-NMS》](https://gitee.com/xn1997/picgo/raw/master/gtXrQCvwy25bOhM.jpg)
+![《手撕非极大值抑制算法NMS与soft-NMS》](https://raw.githubusercontent.com/xn1997/picgo/master/gtXrQCvwy25bOhM.jpg)
 
 ## 背景知识
 
 NMS (Non-maximum suppression) 非极大值抑制，即抑制不是极大值的检测框，根据什么去抑制？在目标检测领域，当然是根据 IOU (Intersection over Union) 去抑制。下图是绿色检测框与红色检测框的 IOU 计算方法：
 
-![img](https://gitee.com/xn1997/picgo/raw/master/GHivYzUtdSJrZNE.png)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/GHivYzUtdSJrZNE.png)
 
 
 

@@ -38,7 +38,7 @@ feature map每个单元（像素）输出：2*（4+1）+20。
 
 #### loss
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/v2-aad10d0978fe7bc62704a767eabd0b54_720w.jpg" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/v2-aad10d0978fe7bc62704a767eabd0b54_720w.jpg" style="zoom:80%;" />
 
 - 给予坐标损失更大的loss weight。
 - 对没有object的box的confidence loss，赋予小的loss weight。
@@ -46,7 +46,7 @@ feature map每个单元（像素）输出：2*（4+1）+20。
 - 只有当某个网格中有object的时候才对classification error进行惩罚。
 - 只有当某个box  predictor对某个ground truth box负责的时候，才会对box的coordinate error进行惩罚。而对哪个ground truth box负责就看其预测值和ground truth box的IoU是不是在那个cell的所有box中最大
 
-![c65a416e27972fef0cfd6d16bf53fea](https://gitee.com/xn1997/picgo/raw/master/c65a416e27972fef0cfd6d16bf53fea.jpg)
+![c65a416e27972fef0cfd6d16bf53fea](https://raw.githubusercontent.com/xn1997/picgo/master/c65a416e27972fef0cfd6d16bf53fea.jpg)
 
 #### 缺点
 

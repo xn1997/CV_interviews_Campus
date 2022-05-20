@@ -33,15 +33,15 @@
 
 因此，对于图像中的每个像素，高斯模糊技术会基于其相邻像素计算一个值。以下是应用高斯模糊之前和之后的图像示例。如图所示，纹理和次要细节将从图像中删除，并且仅保留诸如形状和边缘之类的相关信息：
 
-![img](https://gitee.com/xn1997/picgo/raw/master/YVAGru5xtpUZT7w.png)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/YVAGru5xtpUZT7w.png)
 
 为了保证之后提取的特征与图像大小无关，需要创建“比例空间”，比例空间是从单个图像生成的具有不同比例的图像的集合。通常对原始图像进行四次缩放图像，并为每个缩放图像创建５个后续的模糊图像。
 
-![img](https://gitee.com/xn1997/picgo/raw/master/H3dCblKxnD7EaVL.jpg)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/H3dCblKxnD7EaVL.jpg)
 
 接下来需要使用高斯差异（DoG）的技术来增强特征。DoG指的是在相同的比例尺下，前一个图像减去后一个图像，为每个octave创建另一组图像，每组图像剩下4个图像。
 
-![img](https://gitee.com/xn1997/picgo/raw/master/N6LTyHYvtVUrSfz.jpg)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/N6LTyHYvtVUrSfz.jpg)
 
 #### (2) 关键点检测
 
@@ -56,7 +56,7 @@
 
 这意味着将每个像素值与其他26个像素值进行比较，以确定是否为局部最大值/最小值。例如，在下图中，我们从第一个八度获得了三个图像。将标记为x的像素与相邻像素（绿色）进行比较，如果它是相邻像素中最高或最低的像素，则将其选择为关键点：
 
-![img](https://gitee.com/xn1997/picgo/raw/master/e3AOhJrzDc4yGVx.png)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/e3AOhJrzDc4yGVx.png)
 
 由此便找到了那些尺度不变形的关键点。
 
@@ -105,7 +105,7 @@ $Φ = atan(\frac{Gy}{Gx}) = atan(1.55) =57.17$
 
 首先在关键点周围采用16×16的邻域。将该16×16区域进一步划分为4×4子块，对于这些子块中的每一个小块，使用幅度和方向生成柱状图。
 
-![img](https://gitee.com/xn1997/picgo/raw/master/Zifa4cIWUzrCvlu.jpg)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/Zifa4cIWUzrCvlu.jpg)
 
 在此阶段，bin的大小增加，只占用8个bin(不是36个)。每一个箭头代表8个bin，箭头的长度定义了幅度。因此，每个关键点总共有128个bin值。
 
@@ -115,7 +115,7 @@ $Φ = atan(\frac{Gy}{Gx}) = atan(1.55) =57.17$
 
 当组成一个图像对的两张图的关键点都被识别出来以后，我们需要将它们关联（或称「匹配」）起来，两张图像中对应的关键点在现实中是同一个点。一个可以实现该功能的函数是「BFMatcher.knnMatch()」。这个匹配器（matcher）会衡量每一对关键点的描述子之间的距离，然后返回与每个关键点距离最小的 k 个最佳匹配结果。
 
-![](https://gitee.com/xn1997/picgo/raw/master/ZXH5ARo3pKQ6iPs.png)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/ZXH5ARo3pKQ6iPs.png)
 
 ### 图像变形
 

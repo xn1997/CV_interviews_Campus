@@ -8,7 +8,7 @@
 
 高中的时候我们都学过笛卡尔坐标系 (x, y) 也就是直角坐标系，在这个坐标系中可以有很多种方法来表示一条直线，例如点斜式 $y - b = k*(x - a)$ 或者两点式 $y - y_2 = \frac{y_1 - y_2}{x_1 - x_2}*(x - x_2)$ ，但是在霍夫变换中我们使用的是另外一种表示方法即极坐标系，使用两个变量 $(r, \theta)$ 来表示一条直线，具体地 $r$ 为一条直线到原点的距离，$\theta$ 为该直线的垂线与 x 轴的夹角。
 
-<img src="https://gitee.com/xn1997/picgo/raw/master/LJqOWVRHSrPTGFc.gif" alt="img" style="zoom:150%;" />
+<img src="https://raw.githubusercontent.com/xn1997/picgo/master/LJqOWVRHSrPTGFc.gif" alt="img" style="zoom:150%;" />
 
 <img src="https://pic4.zhimg.com/80/v2-a2519f463fd633e2650ac2acc156fce3_720w.jpg" alt="img" style="zoom:50%;" />
 
@@ -24,13 +24,13 @@
 
 下面拿一个博客中的例子来说明：
 
-![img](https://gitee.com/xn1997/picgo/raw/master/dieU4B871rtCPRM.jpg)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/dieU4B871rtCPRM.jpg)
 
 如果空间中有3个点，如何判断这三个点在不在一个直线上？这个例子中，对于每个点均求过该点的6条直线的 $(r,\theta)$ 坐标，共求了3*6个$(r,\theta)$ 坐标。可以发现在 $\theta = 60$ 时，三个点的 r 都近似为80.7，由此可判定这三个点都在直线（80.7，60）上。
 
 通过 $(r, \theta)$  坐标系可以更直观表示这种关系，如果对于一个给定点 $(x_0,y_0)$ ，我们在极坐标系下画出经过该点的所有直线的极坐标表示，将得到一条正弦曲线。下图是直角坐标系下的三个点在极坐标系下绘出的图：图中三个点的 $(r, \theta)$  曲线汇集在一起，该交点就是同时经过这三个点的直线。 
 
-![img](https://gitee.com/xn1997/picgo/raw/master/2oUrP4SNmYCyZWw.jpg)
+![img](https://raw.githubusercontent.com/xn1997/picgo/master/2oUrP4SNmYCyZWw.jpg)
 
 ### hough变换检测圆的流程
 
@@ -40,7 +40,7 @@
 
 下面借助这张图来形象理解：
 
-先说说怎么表示过点 $(x_1, y_1)$ 的所有圆的表示。当 $r_1$ 确定时，根据  $(x_1 - a_1)^2 + (y_1 - b_1) = r_1^2 $ ，即 $(a_1,b_1)$ 的轨迹则变成了以 $(x_1, y_1)$ 为圆心 $r_1$ 为半径的圆，取完所有的 $r_1^i$ ，$(a_1^{(i)},b_1^{(i)}, r_1^{(i)})$ 的轨迹便如图中的一个圆锥，三个点的所有圆表示形成的圆锥的交点 A 所对应的那个   $(a_k, b_k, r_k)$ 便是经过这三个点的圆。![img](https://gitee.com/xn1997/picgo/raw/master/EJeyXO5zkruFtTq.jpg)
+先说说怎么表示过点 $(x_1, y_1)$ 的所有圆的表示。当 $r_1$ 确定时，根据  $(x_1 - a_1)^2 + (y_1 - b_1) = r_1^2 $ ，即 $(a_1,b_1)$ 的轨迹则变成了以 $(x_1, y_1)$ 为圆心 $r_1$ 为半径的圆，取完所有的 $r_1^i$ ，$(a_1^{(i)},b_1^{(i)}, r_1^{(i)})$ 的轨迹便如图中的一个圆锥，三个点的所有圆表示形成的圆锥的交点 A 所对应的那个   $(a_k, b_k, r_k)$ 便是经过这三个点的圆。![img](https://raw.githubusercontent.com/xn1997/picgo/master/EJeyXO5zkruFtTq.jpg)
 
 椭圆或者其他形状同理，只要找到一种表示即可将在一个空间中的形状问题变换到另一个空间的点统计问题。
 

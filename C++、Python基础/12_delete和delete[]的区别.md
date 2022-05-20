@@ -58,7 +58,7 @@ int main() {
 
 上面程序的运行结果：
 
-![](https://gitee.com/xn1997/picgo/raw/master/mIwzKtRjFVMYTJX.png)
+![](https://raw.githubusercontent.com/xn1997/picgo/master/mIwzKtRjFVMYTJX.png)
 
 可以看到，delete[]在释放内存的时候，调用了3次析构函数，也就是说，**delete[]会调用析构函数对数组的所有对象进行析构**；而**delete只调用了一次析构函数**，即数组中第一个对象的析构函数，而数组中剩下的对象的析构函数没有被调用，因此**造成了内存泄漏**。
 
