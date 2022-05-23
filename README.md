@@ -4,9 +4,9 @@
 本仓库在[CV_interviews_Q-A](https://github.com/GYee/CV_interviews_Q-A)的基础上，根据自己的面试经历，增加了一些内容，并修改了一些了答案，仅供参考，不一定都对。
 文件名带？的，表示答案不完整。
 
-markdown阅读软件建议为Typora，建议Typora主题修改为Mo，个人感觉比较好看。
-文献管理软件可以使用Zotero，正版免费。
-笔记软件可以Typora+坚果云+Picgo，个人目前尝试使用Wolai，感觉比较有意思。
+> markdown阅读软件建议为Typora，建议Typora主题修改为Mo，个人感觉比较好看。
+> 文献管理软件可以使用Zotero，正版免费。
+> 笔记软件可以Typora+坚果云+Picgo，个人目前尝试使用Wolai，感觉比较有意思。Wolai注册邀请码：EBSNYLYE。
 
 海康威视内推码：Y27P71，实习秋招均可投递。
 
