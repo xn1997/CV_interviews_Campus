@@ -5,7 +5,9 @@
 文件名带？的，表示答案不完整。
 
 > markdown阅读软件建议为Typora，建议Typora主题修改为Mo，个人感觉比较好看。
+> 
 > 文献管理软件可以使用Zotero，正版免费。
+> 
 > 笔记软件可以Typora+坚果云+Picgo，个人目前尝试使用Wolai，感觉比较有意思。Wolai注册邀请码：EBSNYLYE。
 
 海康威视内推码：Y27P71，实习秋招均可投递。
